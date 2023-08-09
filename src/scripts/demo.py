@@ -8,7 +8,7 @@ def run_crawler(jar_path, app_path, sdk_path, script, timeout):
         "--apk-file", app_path,
         "--android-sdk", sdk_path,
         "--robo-script-file", script,
-        "--timeout", timeout
+        "--timeout-sec", timeout
     ]
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = process.communicate()
@@ -24,7 +24,7 @@ def main():
     parser.add_argument('--jar', required=True, help='Path to the crawler JAR file.')
     parser.add_argument('--app', required=True, help='Path to the APK file of the app to crawl.')
     parser.add_argument('--sdk', required=True, help='Path to the Android SDK.')
-    parser.add_argument('--script', required=False, help='Path to the Robo Script.')
+    parser.add_argument('--script', required=True, help='Path to the Robo Script.')
     parser.add_argument('--timeout', default=60, help='Timeout in seconds for the crawler.')
 
     args = parser.parse_args()
