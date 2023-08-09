@@ -10,7 +10,7 @@ output_file="app.apk"
 if curl --output /dev/null --silent --head --fail "$url"; then
   echo "URL exists: $url"
   echo "Downloading file..."
-  curl --silent --output "$output_file" "$url"
+  curl --silent --location --output "$output_file" "$url"
   echo "Download completed. File saved as $output_file"
 else
   echo "URL does not exist: $url"
