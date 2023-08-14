@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 
 # URL to fetch
-url="https://firefox-ci-tc.services.mozilla.com/api/index/v1/task/mobile.v3.firefox-android.apks.fenix-debug.latest.arm64-v8a/artifacts/public/build/target.arm64-v8a.apk"
+url="https://dl.google.com/appcrawler/beta1/app-crawler.zip"
 
 # Output file
-output_file="app.apk"
+output_file="crawl_launcher.jar"
 
 # Use curl to fetch the URL and write the output to the file
 if curl --output /dev/null --silent --head --fail "$url"; then
