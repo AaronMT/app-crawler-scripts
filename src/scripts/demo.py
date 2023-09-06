@@ -24,7 +24,7 @@ def main():
     parser.add_argument('--jar', required=True, help='Path to the crawler JAR file.')
     parser.add_argument('--apk-file', required=True, help='Path to the APK file of the app to crawl.')
     parser.add_argument('--android-sdk', required=True, help='Path to the Android SDK.')
-    parser.add_argument('--robo-script-file', required=True, help='Path to the Robo Script.')
+    parser.add_argument('--robo-script-file', required=False, default='empty.json', help='Path to the Robo Script.')
     parser.add_argument('--timeout-sec', default=60, help='Timeout in seconds for the crawler.')
 
     args = parser.parse_args()

@@ -1,0 +1,19 @@
+[
+  {
+    "eventType": "VIEW_CLICKED",
+    "elementDescriptors": [
+      {
+        "resourceId": "org.mozilla.fenix.debug:id/toolbar"
+      }
+    ]
+  },
+  {
+    "eventType": "ENTER_TEXT",
+    "replacementText": "vpn.mozilla.org",
+    "elementDescriptors": [
+      {
+        "resourceId": "org.mozilla.fenix.debug:id/mozac_browser_toolbar_edit_url_view"
+      }
+    ]
+  }
+]

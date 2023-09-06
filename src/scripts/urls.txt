@@ -1,0 +1,8 @@
+mozilla.org
+developer.mozilla.org
+addons.mozilla.org
+support.mozilla.org
+wiki.mozilla.org
+firefox.com
+vpn.mozilla.org
+getpocket.com
